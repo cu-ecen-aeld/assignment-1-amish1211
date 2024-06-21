@@ -18,7 +18,7 @@ exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 
 echo "Running test with user $(whoami)"
 
-set +e
+set +e  
 
 ./unit-test.sh
 unit_test_rc=$?
